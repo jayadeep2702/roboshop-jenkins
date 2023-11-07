@@ -2,7 +2,7 @@
   community.general.jenkins_job_info:
     name: "{{item.job_name}}"
     user: admin
-    paswword: admin123
+    password: admin123
     url: http://172.31.93.255:8080
   register: jenkins_job_status
   ignore_errors: true
