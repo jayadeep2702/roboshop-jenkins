@@ -1,4 +1,4 @@
 sjobs:
   - { get_repo_url: https://github.com/jayadeep2702/roboshopp-terraform.git, job_name: roboshop-terraform}
   - { get_repo_url: https://github.com/jayadeep2702/roboshopp-ansible.git, job_name: roboshop-ansible}
-  -  { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-storestore.git, job_name: aws-ssm-parameter-storestore }
+  - { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-storestore.git, job_name: aws-ssm-parameter-storestore }
