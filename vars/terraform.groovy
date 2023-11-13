@@ -27,12 +27,11 @@ def call() {
                 }
             }
         }
+    post {
+      always {
+         cleanWS()
+      }
 
-
-        post {
-            always {
-                cleanWS()
-            }
-        }
+    }
     }
 }
