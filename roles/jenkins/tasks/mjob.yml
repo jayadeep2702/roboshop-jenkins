@@ -12,7 +12,7 @@
   ansible.builtin.template:
     src: mjob.xml
     dest: /tmp/test.xml
-  when: jenkins_job_status.failed
+  when: jenkins_job_status.failed or override
 
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
