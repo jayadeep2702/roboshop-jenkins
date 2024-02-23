@@ -21,4 +21,4 @@
     password: admin123
     url: http://172.31.87.248:8080
     user: admin
-  when: jenkins_job_status.failed
+  when: jenkins_job_status.failed or override
