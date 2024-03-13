@@ -12,4 +12,5 @@ mjobs:
   - { get_repo_url: https://github.com/jayadeep2702/shipping.git, job_name: shipping}
   - { get_repo_url: https://github.com/jayadeep2702/payment.git, job_name: payment}
   -  { get_repo_url: https://github.com/jayadeep2702/dispatch.git, job_name: dispatch}
+  -  { get_repo_url: https://github.com/jayadeep2702/frontend.git, job_name: frontend}
 
