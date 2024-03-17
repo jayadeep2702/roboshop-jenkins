@@ -22,6 +22,7 @@ def call() {
             stage('Unit Test cases') {
                 steps {
                     sh 'echo Unit tests'
+                    sh 'python3.6 -m unittest'
                 }
             }
             stage('Checkmarx SAST Scan') {

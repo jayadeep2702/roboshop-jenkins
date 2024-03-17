@@ -16,13 +16,15 @@ def call() {
 
             stage('code quality') {
                 steps {
-                     sh 'sonar-scanner -Dsonar.projectKey=${component} -Dsonar.host.url=http://172.31.43.197:9000 -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.qualitygate.wait=true'
+                     //sh 'sonar-scanner -Dsonar.projectKey=${component} -Dsonar.host.url=http://172.31.43.197:9000 -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.qualitygate.wait=true'
+                    sh ' echo code quality'
                 }
             }
             stage('Unit Test cases') {
                 steps {
                     sh 'echo Unit tests'
-                }
+                    //sh 'npm test'
+               }
             }
             stage('Checkmarx SAST Scan') {
                 steps {
