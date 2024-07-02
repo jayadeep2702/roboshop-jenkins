@@ -53,7 +53,7 @@ def call() {
                     //sh 'curl -f -v -u ${NEXUS_USR}:${NEXUS_PSW} --upload-file ${component}-${TAG_NAME}.zip http://172.31.12.50:8081/repository/${component}/${component}-${TAG_NAME}.zip'
                     sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 710990938946.dkr.ecr.us-east-1.amazonaws.com'
                     sh 'docker build -t 710990938946.dkr.ecr.us-east-1.amazonaws.com/${component}:${TAG_NAME} .'
-                    sh 'docker push 710990938946.dkr.ecr.us-east-1.amazonaws.com/cart:latest/${component}:${TAG_NAME}'
+                    sh 'docker push 710990938946.dkr.ecr.us-east-1.amazonaws.com/${component}:${TAG_NAME}'
                 }
             }
 
