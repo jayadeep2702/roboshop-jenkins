@@ -1,7 +1,8 @@
 sjobs:
   - { get_repo_url: https://github.com/jayadeep2702/roboshopp-terraform.git, job_name: roboshop-terraform, file_name=Jenkinsfile}
   - { get_repo_url: https://github.com/jayadeep2702/raghu-ansible-roboshop.git, job_name: roboshop-ansible, file_name=Jenkinsfile}
-  - { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-store.git, job_name: aws-ssm-parameter-store, file_name=Jenkinsfile-ps}
+  - { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-store.git, job_name: aws-ssm-parameter-store, file_name=Jenkinsfile}
+  - { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-store.git, job_name: aws-ssm-ps-docker, file_name=Jenkinsfile-ps}
   - { get_repo_url: https://github.com/jayadeep2702/roboshop-helm.git, job_name: roboshop-helm, file_name=Jenkinsfile}
 
 
