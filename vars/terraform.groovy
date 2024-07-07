@@ -19,14 +19,14 @@ def call() {
         stages {
             stage('Terraform INIT') {
                 steps {
-                    sh 'terraform init -backend-config=env-${env}/state.tfvars'
+                    sh 'terraform init -backend-config=env-${env}/state.tfvars -e override=${override}'
                 }
             }
 
             stage('Terraform Apply') {
                 
                 steps {
-                    sh 'terraform ${action} -auto-approve -var-file=env-${env}/main.tf'
+                    sh 'terraform ${action} -auto-approve -var-file=env-${env}/main.tf -e override=${override}'
                 }
             }
 
