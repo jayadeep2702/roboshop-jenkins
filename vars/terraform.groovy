@@ -26,7 +26,7 @@ def call() {
             stage('Terraform Apply') {
                 
                 steps {
-                    sh 'terraform ${action} -auto-approve -var-file=env-${env}/main.tf -var override=${override}'
+                    sh 'terraform ${action} -auto-approve -var-file=env-${env}/main.tf '
                 }
             }
 
