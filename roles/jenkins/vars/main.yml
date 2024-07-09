@@ -4,6 +4,7 @@ sjobs:
   - { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-store.git, job_name: aws-ssm-parameter-store, file_name=Jenkinsfile}
   - { get_repo_url: https://github.com/jayadeep2702/aws-ssm-parameter-store.git, job_name: aws-ssm-ps-docker, file_name=Jenkinsfile-ps}
   - { get_repo_url: https://github.com/jayadeep2702/roboshop-helm.git, job_name: roboshop-helm, file_name=Jenkinsfile}
+  - { get_repo_url: https://github.com/jayadeep2702/schema-loader.git, job_name: schema-loader, file_name=Jenkinsfile}
 
 
 
